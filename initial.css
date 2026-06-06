@@ -1,0 +1,137 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto Mono", monospace;
+   
+}
+
+
+.main_box {
+      background: url(Flux_Dev_renderItem_a_hauntingly_majestic_image_of_the_Hotel_R_3.jpg);
+    height: 100vh;
+  
+
+}
+
+.btn_one {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    position: absolute;
+    left: 10px;
+    line-height: 70px;
+}
+
+.sidebar_menu {
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0, 0, 8px rgba(255, 255, 255, 0.5);
+    transition: all 0.6s;
+}
+
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 70px;
+    box-shadow: 0, 0, 6px rgba(255, 255, 255, 0.5);
+}
+
+.sidebar_menu .logo a {
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.sidebar_menu .btn_two i {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 225px;
+    line-height: 60px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .menu li {
+    margin-top: 8px;
+    padding: 14px;
+}
+
+.sidebar_menu .menu li,
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar_menu .menu i {
+    margin-right: 10px;
+}
+
+
+.sidebar_menu .social_media {
+    position: absolute;
+    left: 25%;
+    bottom: 40px;
+}
+
+.sidebar_menu .social_media i {
+    opacity: 0.6;
+    padding: 3px;
+}
+
+#check {
+    display: none;
+}
+
+
+.sidebar_menu .menu li:hover {
+    box-shadow: 2px 0px 2px 2px;
+}
+
+
+.btn_one:hover {
+    font-size: 23px;
+}
+
+.btn_two:hover i {
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+
+.sidebar_menu .social_media i:hover {
+    opacity: 5;
+    transform: scale(1.8);
+    transition: 0.4s;
+}
+
+#check:checked~.sidebar_menu {
+    left: 0;
+}
+
+
+#check:checked~.sidebar_menu .btn_two i {
+    opacity: 1;
+}
+
+.image {
+    padding: 0px;
+    margin: 0px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+
+}
